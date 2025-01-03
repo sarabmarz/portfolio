@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.bg-overlay {
+    background-size: cover;
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0);
+    z-index: 0;
+}
+
+.text-center {
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.progress-bar {
+    background-color: #ffffff !important;
+}
+.progress {
+    background-color: #727272;
+}
+.progress-text {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: -10px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
